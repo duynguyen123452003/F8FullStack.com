@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="shortcut icon" href="assets/img/f8 icon.png">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>F8 Full Stack</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__nav">
+
+                    <label for="bars-check" class="header__icon-bar-box">
+                        <i class="fa-solid fa-bars header__icon-bar"></i>
+                    </label>
+
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="" class="header__nav-item-link">
+                                <div class="header__nav-icon">
+                                    <img src="assets/img/f8 icon.png" alt="">
+                                </div>
+                                <div class="header__nav-icon-text">
+                                    Học Lập Trình Để Đi Làm
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <div class="header__nav-seach">
+                                <div class="seach-icon">
+                                    <i class="fa-solid fa-magnifying-glass header__nav-seach-icon"></i>
+                                </div>
+                                <input type="text" class="header__nav-seach-input"
+                                    placeholder="Tìm kiếm khóa học,bài viết,video, ...">
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <div class="header__nav-item-lern">
+                                <label for="lern-check" class="input__label-check">
+                                    Khóa học của tôi
+                                </label>
+                                <input type="checkbox" hidden id="lern-check" class="input__lern-check">
+                                <div class="nav__toggle">
+                                    <div class="nav__toggle-heading">
+                                        <h3>Khóa học của tôi</h3>
+                                        <a href="">Xem tất cả</a>
+                                    </div>
+                                    <div class="nav__toggle-body">
+                                        <div>
+                                            <ul class="nav__toggle-list">
+                                                <li class="nav__toggle-item">
+                                                    <a href="" class="nav__toggle-item-link">
+                                                        <img src="assets/img/responsive.png" alt=""
+                                                            class="nav__toggle-item-img">
+                                                    </a>
+                                                </li>
+                                                <li class="nav__toggle-item">
+                                                    <a href="" class="nav__toggle-item-link">
+                                                        <h3 class="nav__toggle-name">Responsive Với Grid System</h3>
+                                                        <h3 class="nav__toggle-tag">Học cách đây một ngày trước</h3>
+                                                        <div class="nav__toggle-propressbar">
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="nav__toggle-list">
+                                                <li class="nav__toggle-item">
+                                                    <a href="" class="nav__toggle-item-link">
+                                                        <img src="assets/img/javascriptcb.png" alt=""
+                                                            class="nav__toggle-item-img">
+                                                    </a>
+                                                </li>
+                                                <li class="nav__toggle-item">
+                                                    <a href="" class="nav__toggle-item-link">
+                                                        <h3 class="nav__toggle-name">Lập Trình JavaScript Cơ Bản</h3>
+                                                        <h3 class="nav__toggle-tag">Học cách đây 3 tháng trướcc</h3>
+                                                        <div class="nav__toggle-propressbar">
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="nav__toggle-list">
+                                                <li class="nav__toggle-item">
+                                                    <a href="" class="nav__toggle-item-link">
+                                                        <img src="assets/img/html0_hero.png" alt=""
+                                                            class="nav__toggle-item-img">
+                                                    </a>
+                                                </li>
+                                                <li class="nav__toggle-item">
+                                                    <a href="" class="nav__toggle-item-link">
+                                                        <h3 class="nav__toggle-name">HTML CSS từ Zero đến Hero</h3>
+                                                        <h3 class="nav__toggle-tag">Bạn chưa học khóa này</h3>
+                                                        <div class="nav__toggle-start-lern">
+                                                            Bắt đầu học
+                                                        </div>
+                                                        <!-- <div class="nav__toggle-propressbar">
+                                                               
+                                                            </div> -->
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="nav__toggle-list">
+                                                <li class="nav__toggle-item">
+                                                    <a href="" class="nav__toggle-item-link">
+                                                        <img src="assets/img/nodejs.png" alt=""
+                                                            class="nav__toggle-item-img">
+                                                    </a>
+                                                </li>
+                                                <li class="nav__toggle-item">
+                                                    <a href="" class="nav__toggle-item-link">
+                                                        <h3 class="nav__toggle-name">Node & ExpressJS</h3>
+                                                        <h3 class="nav__toggle-tag">Bạn chưa học khóa nàyc</h3>
+                                                        <div class="nav__toggle-start-lern">
+                                                            Bắt đầu học
+                                                        </div>
+                                                        <!-- <div class="nav__toggle-propressbar">
+                                                                
+                                                            </div> -->
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="seach_check">
+                                <i class="fa-solid fa-magnifying-glass header__nav-mobile-seach-icon"></i>
+                            </label>
+                            <i class="fa-solid fa-bell header__nav-item-icon"></i>
+                            <div class="header__nav-item-person">
+                                D
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <input type="checkbox" id="seach_check" hidden class="seach__checked">
+                <label class="btn__back" for="seach_check">
+                    <i class="fa-solid fa-angle-left"></i>
+                    Quay lại
+                </label>
+                <nav class="nav__seach">
+                    <div class="nav__seach-input">
+                        <input type="text" class="nav__seach-input-item" placeholder="Tìm Kiếm...">
+                    </div>
+                </nav>
+                <input type="checkbox" id="bars-check" hidden class="input__bars-check">
+                <label for="bars-check" class="overlay">
+
+                </label>
+                <nav class="nav__mobile">
+                    <ul class="nav__mobile-list">
+                        <li class="nav__mobile-item">
+                            <div class="nav__mobile-person">
+                                D
+                            </div>
+                            <h3 class="nav__mobile-name">Nguyễn Khả Duy</h3>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-user nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Trang cá nhân
+                                </div>
+                            </div>
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-book-open nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Khóa học của tôi
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-house nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Trang chủ
+                                </div>
+                            </div>
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-road nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Lộ trình
+                                </div>
+                            </div>
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-lightbulb nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Khóa học
+                                </div>
+                            </div>
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-book-open nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Blog
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-bookmark nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Bài viết đã lưu
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-circle-exclamation nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Giới thiệu
+                                </div>
+                            </div>
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-users nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Cơ hội việc làm
+                                </div>
+                            </div>
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-laptop-code nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Cài đặt
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <div class="nav__mobile-content">
+                                <i class="fa-solid fa-right-to-bracket nav__mobile-content-icon"></i>
+                                <div class="nav__mobile-text">
+                                    Đăng xuất
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="container">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-1 m-0 c-0">
+                        <div class="category">
+                             <ul class="category__list">
+                                <li class="category__item">
+                                    <ul class="category__list-first">
+                                        <li class="category__item-first">
+                                            <a href="" class="category__item-first-add">
+                                                <div class="category__add">
+                                                    +
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="category__item-first">
+                                            <a href="" class="category__item-first-link">
+                                                <i class="category__icon fa-solid fa-house"></i>
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li class="category__item-first">
+                                            <a href="" class="category__item-first-link">
+                                                <i class="category__icon fa-solid fa-road"></i>
+                                                Lộ trình
+                                            </a>
+                                        </li>
+                                        <li class="category__item-first">
+                                            <a href="" class="category__item-first-link">
+                                                <i class="category__icon fa-solid fa-lightbulb"></i>
+                                                Học
+                                            </a>
+                                        </li>
+                                        <li class="category__item-first">
+                                            <a href="" class="category__item-first-link">
+                                                <i class="category__icon fa-solid fa-newspaper"></i>
+                                                Blog
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">
+                                        <i class="category__icon fa-solid fa-bullhorn icon__bullhorn"></i>
+                                    </a>
+                                </li>
+                             </ul>
+                        </div>
+                    </div>
+                    <div class="col l-11 m-12 c-12">
+                        <div class="slider">
+                            <div class="slider__content">
+                                <h2 class="slider__content-heading">Thành Quả của Học Viên</h2>
+                                <p class="slider__content-info">Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập trình cũng không là ngoại lệ.</p>
+                                <button class="slider__content-btn">Xem thành quả</button>
+                            </div>
+                            <div class="slider__img">
+                                <img src="assets/img/slide.png" alt="">
+                            </div>
+                        </div>
+                        <div class="course__pro">
+                            <div class="row">
+                                <div class="course__pro-heading col l-12 m-12 c-12">
+                                    <h3 class="course__pro-heading-content">Khóa học Pro</h3>
+                                    <div class="course__pro-heading-new">MỚI</div>
+                                </div>
+                            </div>
+                            <div class="row "> 
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__pro-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/htmlpro.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem khóa học</button>
+                                            <div class="course__pro-item-crown">
+                                                <img src="assets/img/kisspng-computer-icons-crown-font-tiara-5abd0f06342e45.3919272115223395902137.png" alt="">
+                                            </div>
+                                        </div>
+                                        <h2 class="course__pro-item-name">HTML CSS Pro</h2>
+                                        <div class="course__pro-item-price">
+                                            <h2 class="course__pro-item-no-sale">2.499.000đ</h2>
+                                            <h2 class="course__pro-item-sale">1.299.000đ</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__pro-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/javascriptnangcao.png" alt="" class="no__course">
+                                            <div class="course__pro-item-crown">
+                                                <img src="assets/img/kisspng-computer-icons-crown-font-tiara-5abd0f06342e45.3919272115223395902137.png" alt="">
+                                            </div>
+                                        </div>
+                                        <h2 class="course__pro-item-name">JavaScript Pro</h2>
+                                        <div class="course__pro-item-price no__price">
+                                            <h2 class="course__pro-item-no-sale">2.499.000đ</h2>
+                                            <h2 class="course__pro-item-sale">1.299.000đ</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__pro-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/nodejs.png" alt="" class="no__course">
+                                            <div class="course__pro-item-crown">
+                                                <img src="assets/img/kisspng-computer-icons-crown-font-tiara-5abd0f06342e45.3919272115223395902137.png" alt="">
+                                            </div>
+                                        </div>
+                                        <h2 class="course__pro-item-name">NextJS Pro</h2>
+                                        <div class="course__pro-item-price no__price">
+                                            <h2 class="course__pro-item-no-sale">2.499.000đ</h2>
+                                            <h2 class="course__pro-item-sale">1.299.000đ</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__pro-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/nodejs.png" alt="" class="no__course">
+                                            <div class="course__pro-item-crown">
+                                                <img src="assets/img/kisspng-computer-icons-crown-font-tiara-5abd0f06342e45.3919272115223395902137.png" alt="">
+                                            </div>
+                                        </div>
+                                        <h2 class="course__pro-item-name">NextJS Pro</h2>
+                                        <div class="course__pro-item-price no__price">
+                                            <h2 class="course__pro-item-no-sale">2.499.000đ</h2>
+                                            <h2 class="course__pro-item-sale">1.299.000đ</h2>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="row">
+                                <div class="col l-12 m-12 c-12 person__number">
+                                    <span class="person__number-lern">323.850+</span>
+                                    <span class="person__number-lern-text">người khác đã học</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="course__free-heading col l-12 m-12 c-12">
+                                    <h3 class="course__free-heading-content">Khóa học miễn phí</h3>
+                                    <h3 class="course__free-heading-view-all">Xem lộ trình <i class="fa-solid fa-chevron-right course__free-heading-icon"></i></h3>
+                                </div>
+                            </div>
+                            <div class="row "> 
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__free-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/Kienthucnentangnhapmon.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem khóa học</button>
+                                        </div>
+                                        <h2 class="course__free-item-name">Kiến Thức Nhập Môn IT</h2>
+                                        <div class="course__free-item-user">
+                                            <i class="fa-solid fa-users course__free-item-user-icon"></i>
+                                            <span class="number__user-learned">108.742</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__free-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/c++.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem khóa học</button>
+                                        </div>
+                                        <h2 class="course__free-item-name">Lập trình C++ cơ bản, nâng cao</h2>
+                                        <div class="course__free-item-user">
+                                            <i class="fa-solid fa-users course__free-item-user-icon"></i>
+                                            <span class="number__user-learned">10.432</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__free-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/html0_hero.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem khóa học</button>
+                                        </div>
+                                        <h2 class="course__free-item-name">HTML CSS từ Zero đến Hero</h2>
+                                        <div class="course__free-item-user">
+                                            <i class="fa-solid fa-users course__free-item-user-icon"></i>
+                                            <span class="number__user-learned">164.019</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__free-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/responsive.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem khóa học</button>
+                                        </div>
+                                        <h2 class="course__free-item-name">Responsive Với Grid System</h2>
+                                        <div class="course__free-item-user">
+                                            <i class="fa-solid fa-users course__free-item-user-icon"></i>
+                                            <span class="number__user-learned">37.400</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__free-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/javascriptcb.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem khóa học</button>
+                                        </div>
+                                        <h2 class="course__free-item-name">Lập Trình JavaScript Cơ Bản</h2>
+                                        <div class="course__free-item-user">
+                                            <i class="fa-solid fa-users course__free-item-user-icon"></i>
+                                            <span class="number__user-learned">109.601</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__free-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/javascriptnangcao.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem khóa học</button>
+                                        </div>
+                                        <h2 class="course__free-item-name">Lập Trình JavaScript Nâng Cao</h2>
+                                        <div class="course__free-item-user">
+                                            <i class="fa-solid fa-users course__free-item-user-icon"></i>
+                                            <span class="number__user-learned">29.309</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__free-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/reactjs.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem khóa học</button>
+                                        </div>
+                                        <h2 class="course__free-item-name">Xây Dựng Website với ReactJS</h2>
+                                        <div class="course__free-item-user">
+                                            <i class="fa-solid fa-users course__free-item-user-icon"></i>
+                                            <span class="number__user-learned">48.735</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="course__free-item">
+                                        <div class="course__pro-item-img">
+                                            <img src="assets/img/nodejs.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem khóa học</button>
+                                        </div>
+                                        <h2 class="course__free-item-name">Node & ExpressJS</h2>
+                                        <div class="course__free-item-user">
+                                            <i class="fa-solid fa-users course__free-item-user-icon"></i>
+                                            <span class="number__user-learned">32.980</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="course__free-heading col l-12 m-12 c-12">
+                                    <h3 class="course__free-heading-content">Bài viết nổi bậc</h3>
+                                    <h3 class="course__free-heading-view-all">Xem tất cả <i class="fa-solid fa-chevron-right course__free-heading-icon"></i></h3>
+                                </div>
+                            </div>
+                            <div class="row "> 
+                                <div class="col l-3  m-8 c-8">
+                                    <div class="feature__post-item">
+                                        <div class="feature__post-item-img">
+                                            <img src="assets/img/cácpf8.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem bài viết</button>
+                                        </div>
+                                        <h2 class="feature__post-item-name">Tổng hợp các sản phẩm của học viên tại F8</h2>
+                                        <div class="feature__post-item-user">
+                                            <img src="assets/img/f8 icon.png" alt="" class="feature__post-item-user-img">
+                                            <span class="feature__post-item-user-name">Duy nguyễn</span>
+                                            <span class="feature__post-item-user-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                            <span class="feature__post-item-user-point">.</span>
+                                            <span class="feature__post-item-user-time">6 phút đọc</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="feature__post-item">
+                                        <div class="feature__post-item-img">
+                                            <img src="assets/img/p1taoduan.jpg" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem bài viết</button>
+                                        </div>
+                                        <h2 class="feature__post-item-name">[Phần 1] Tạo dự án ReactJS với Webpack và Babel</h2>
+                                        <div class="feature__post-item-user">
+                                            <img src="assets/img/f8 icon.png" alt="" class="feature__post-item-user-img">
+                                            <span class="feature__post-item-user-name">Duy nguyễn</span>
+                                            <span class="feature__post-item-user-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                            <span class="feature__post-item-user-point">.</span>
+                                            <span class="feature__post-item-user-time">12 phút đọc</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="feature__post-item">
+                                        <div class="feature__post-item-img">
+                                            <img src="assets/img/github.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem bài viết</button>
+                                        </div>
+                                        <h2 class="feature__post-item-name">Cách đưa code lên GitHub và tạo GitHub Pages</h2>
+                                        <div class="feature__post-item-user">
+                                            <img src="assets/img/f8 icon.png" alt="" class="feature__post-item-user-img">
+                                            <span class="feature__post-item-user-name">Võ Minh Kha</span>
+                                            <span class="feature__post-item-user-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                            <span class="feature__post-item-user-point">.</span>
+                                            <span class="feature__post-item-user-time">4 phút đọc</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="feature__post-item">
+                                        <div class="feature__post-item-img">
+                                            <img src="assets/img/kysy.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem bài viết</button>
+                                        </div>
+                                        <h2 class="feature__post-item-name">Ký sự ngày thứ 25 học ở F8</h2>
+                                        <div class="feature__post-item-user">
+                                            <img src="assets/img/f8 icon.png" alt="" class="feature__post-item-user-img">
+                                            <span class="feature__post-item-user-name">Sơn Sơn</span>
+                                            <span class="feature__post-item-user-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                            <span class="feature__post-item-user-point">.</span>
+                                            <span class="feature__post-item-user-time">1 phút đọc</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="feature__post-item">
+                                        <div class="feature__post-item-img">
+                                            <img src="assets/img/cacnguongtainguyenhuuich.png" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem bài viết</button>
+                                        </div>
+                                        <h2 class="feature__post-item-name">Các nguồn tài nguyên hữu ích cho 1 front-end developer</h2>
+                                        <div class="feature__post-item-user">
+                                            <img src="assets/img/f8 icon.png" alt="" class="feature__post-item-user-img">
+                                            <span class="feature__post-item-user-name">Vương Vương</span>
+                                            <span class="feature__post-item-user-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                            <span class="feature__post-item-user-point">.</span>
+                                            <span class="feature__post-item-user-time">2 phút đọc</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="feature__post-item">
+                                        <div class="feature__post-item-img">
+                                            <img src="assets/img/thoigianvadongluc.jpg" alt="">
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <button class="course__btn">Xem bài viết</button>
+                                        </div>
+                                        <h2 class="feature__post-item-name">Thời gian và Động lực</h2>
+                                        <div class="feature__post-item-user">
+                                            <img src="assets/img/f8 icon.png" alt="" class="feature__post-item-user-img">
+                                            <span class="feature__post-item-user-name">Đông Ngô</span>
+                                            <span class="feature__post-item-user-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                            <span class="feature__post-item-user-point">.</span>
+                                            <span class="feature__post-item-user-time">6 phút đọc</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="course__free-heading col l-12 m-12 c-12">
+                                    <h3 class="course__free-heading-content">Videos nổi bật</h3>
+                                    <h3 class="course__free-heading-view-all">Xem tất cả <i class="fa-solid fa-chevron-right course__free-heading-icon"></i></h3>
+                                </div>
+                            </div>
+                            <div class="row "> 
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="videos__item">
+                                        <div class="videos__item-img">
+                                            <img src="assets/img/svitthuctap.jpg" alt="" >
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <div class="btn__videos">
+                                                <button class="btn__play"><i class="fa-solid fa-play"></i></button>
+                                                <button class="btn__time">34:51</button>
+                                            </div>
+                                            <button class="course__btn">Xem video</button>
+                                        </div>
+                                        <h2 class="videos__item-name">Tổng hợp các sản phẩm của học viên tại F8</h2>
+                                        <div class="videos__item-content">
+                                            <i class="fa-solid fa-eye videos__item-content-view"></i>
+                                            <span class="videos__item-content-number-view">228.683</span>
+                                            <i class="fa-solid fa-thumbs-up videos__item-content-like"></i>
+                                            <span class="videos__item-content-number-like">5.827</span>
+                                            <i class="fa-solid fa-comment videos__item-content-cmt"></i>
+                                            <span class="videos__item-content-number-cmt">229</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="videos__item">
+                                        <div class="videos__item-img">
+                                            <img src="assets/img/pphocl.jpg" alt="" >
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <div class="btn__videos">
+                                                <button class="btn__play"><i class="fa-solid fa-play"></i></button>
+                                                <button class="btn__time">24:06</button>
+                                            </div>
+                                            <button class="course__btn">Xem video</button>
+                                        </div>
+                                        <h2 class="videos__item-name">Phương pháp học lập trình của Admin F8?</h2>
+                                        <div class="videos__item-content">
+                                            <i class="fa-solid fa-eye videos__item-content-view"></i>
+                                            <span class="videos__item-content-number-view">112.108</span>
+                                            <i class="fa-solid fa-thumbs-up videos__item-content-like"></i>
+                                            <span class="videos__item-content-number-like">5.620</span>
+                                            <i class="fa-solid fa-comment videos__item-content-cmt"></i>
+                                            <span class="videos__item-content-number-cmt">330</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="videos__item">
+                                        <div class="videos__item-img">
+                                            <img src="assets/img/codethieunhi.jpg" alt="" >
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <div class="btn__videos">
+                                                <button class="btn__play"><i class="fa-solid fa-play"></i></button>
+                                                <button class="btn__time">25:10</button>
+                                            </div>
+                                            <button class="course__btn">Xem video</button>
+                                        </div>
+                                        <h2 class="videos__item-name">"Code Thiếu Nhi Battle" Tranh Giành Trà Sữa Size L</h2>
+                                        <div class="videos__item-content">
+                                            <i class="fa-solid fa-eye videos__item-content-view"></i>
+                                            <span class="videos__item-content-number-view">267.961</span>
+                                            <i class="fa-solid fa-thumbs-up videos__item-content-like"></i>
+                                            <span class="videos__item-content-number-like">5.598</span>
+                                            <i class="fa-solid fa-comment videos__item-content-cmt"></i>
+                                            <span class="videos__item-content-number-cmt">181</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="videos__item">
+                                        <div class="videos__item-img">
+                                            <img src="assets/img/html0_hero.png" alt="" >
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <div class="btn__videos">
+                                                <button class="btn__play"><i class="fa-solid fa-play"></i></button>
+                                                <button class="btn__time">03:15</button>
+                                            </div>
+                                            <button class="course__btn">Xem video</button>
+                                        </div>
+                                        <h2 class="videos__item-name">Bạn sẽ làm được gì sau khóa học?</h2>
+                                        <div class="videos__item-content">
+                                            <i class="fa-solid fa-eye videos__item-content-view"></i>
+                                            <span class="videos__item-content-number-view">707.434</span>
+                                            <i class="fa-solid fa-thumbs-up videos__item-content-like"></i>
+                                            <span class="videos__item-content-number-like">4.322</span>
+                                            <i class="fa-solid fa-comment videos__item-content-cmt"></i>
+                                            <span class="videos__item-content-number-cmt">126</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="videos__item">
+                                        <div class="videos__item-img">
+                                            <img src="assets/img/kiemnhieutien.jpg" alt="" >
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <div class="btn__videos">
+                                                <button class="btn__play"><i class="fa-solid fa-play"></i></button>
+                                                <button class="btn__time">25:40</button>
+                                            </div>
+                                            <button class="course__btn">Xem video</button>
+                                        </div>
+                                        <h2 class="videos__item-name">Làm sao để có thu nhập cao và đi xa hơn trong ngành IT?</h2>
+                                        <div class="videos__item-content">
+                                            <i class="fa-solid fa-eye videos__item-content-view"></i>
+                                            <span class="videos__item-content-number-view">77.272</span>
+                                            <i class="fa-solid fa-thumbs-up videos__item-content-like"></i>
+                                            <span class="videos__item-content-number-like">3.304</span>
+                                            <i class="fa-solid fa-comment videos__item-content-cmt"></i>
+                                            <span class="videos__item-content-number-cmt">236</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="videos__item">
+                                        <div class="videos__item-img">
+                                            <img src="assets/img/javascriptcb.png" alt="" >
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <div class="btn__videos">
+                                                <button class="btn__play"><i class="fa-solid fa-play"></i></button>
+                                                <button class="btn__time">07:53</button>
+                                            </div>
+                                            <button class="course__btn">Xem video</button>
+                                        </div>
+                                        <h2 class="videos__item-name">Javascript có thể làm được gì? Giới thiệu qua về trang F8 | Học lập trình Javascript cơ bản</h2>
+                                        <div class="videos__item-content">
+                                            <i class="fa-solid fa-eye videos__item-content-view"></i>
+                                            <span class="videos__item-content-number-view">594.617</span>
+                                            <i class="fa-solid fa-thumbs-up videos__item-content-like"></i>
+                                            <span class="videos__item-content-number-like">3.296</span>
+                                            <i class="fa-solid fa-comment videos__item-content-cmt"></i>
+                                            <span class="videos__item-content-number-cmt">116</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="videos__item">
+                                        <div class="videos__item-img">
+                                            <img src="assets/img/reactjs.png" alt="" >
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <div class="btn__videos">
+                                                <button class="btn__play"><i class="fa-solid fa-play"></i></button>
+                                                <button class="btn__time">10:41</button>
+                                            </div>
+                                            <button class="course__btn">Xem video</button>
+                                        </div>
+                                        <h2 class="videos__item-name">ReactJS là gì? Tại sao nên học ReactJS?</h2>
+                                        <div class="videos__item-content">
+                                            <i class="fa-solid fa-eye videos__item-content-view"></i>
+                                            <span class="videos__item-content-number-view">304.766</span>
+                                            <i class="fa-solid fa-thumbs-up videos__item-content-like"></i>
+                                            <span class="videos__item-content-number-like">3.046</span>
+                                            <i class="fa-solid fa-comment videos__item-content-cmt"></i>
+                                            <span class="videos__item-content-number-cmt">350</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-8 c-8">
+                                    <div class="videos__item">
+                                        <div class="videos__item-img">
+                                            <img src="assets/img/hocflexboxquavd.jpg" alt="" >
+                                            <div class="hover__overlay">
+
+                                            </div>
+                                            <div class="btn__videos">
+                                                <button class="btn__play"><i class="fa-solid fa-play"></i></button>
+                                                <button class="btn__time">35:04</button>
+                                            </div>
+                                            <button class="course__btn">Xem video</button>
+                                        </div>
+                                        <h2 class="videos__item-name">Học Flexbox qua ví dụ</h2>
+                                        <div class="videos__item-content">
+                                            <i class="fa-solid fa-eye videos__item-content-view"></i>
+                                            <span class="videos__item-content-number-view">178.922</span>
+                                            <i class="fa-solid fa-thumbs-up videos__item-content-like"></i>
+                                            <span class="videos__item-content-number-like">2.661</span>
+                                            <i class="fa-solid fa-comment videos__item-content-cmt"></i>
+                                            <span class="videos__item-content-number-cmt">181</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="grid">
+                <div class="row footer__web">
+                    <div class="col l-3 m-12 c-12">
+                        <div class="footer__heading">
+                            <img src="assets/img/f8 icon.png" alt="" class="footer__heading-img" style="width: 40px;">
+                            <span class="footer__heading-text">Học Lập Trình Để Đi Làm</span>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">Điện thoại: 0246.329.1102</li>
+                            <li class="footer__item">Email: contact@fullstack.edu.vn</li>
+                            <li class="footer__item">Địa chỉ: Số 26 Dương Đình Nghệ, Phường Yên Hòa, Quận Cầu Giấy, TP. Hà Nội</li>
+                            <li class="footer__item">
+                                <img src="assets/img/dmca.2593d9ecf1c982e3c3a2.png" alt="" class="footer__item-img">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2 m-4 c-12">
+                        <div class="footer__heading">
+                            VỀ F8
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">Giới thiệu</li>
+                            <li class="footer__item">Liên hệ</li>
+                            <li class="footer__item">Điều khoản</li>
+                            <li class="footer__item">Bảo mật</li>
+                            <li class="footer__item">Cơ hội việc làm</li>
+                        </ul>
+                    </div>
+                    <div class="col l-2 m-4 c-12">
+                        <div class="footer__heading">
+                            SẢN PHẨM
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">Game Nester</li>
+                            <li class="footer__item">Game CSS Diner</li>
+                            <li class="footer__item">Game CSS Selectors</li>
+                            <li class="footer__item">Game Froggy</li>
+                            <li class="footer__item">Game Froggy Pro</li>
+                            <li class="footer__item">Game Scoops</li>
+                        </ul>
+                    </div>
+                    <div class="col l-2 m-4 c-12">
+                        <div class="footer__heading">
+                            CÔNG CỤ
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">Tạo CV xin việc</li>
+                            <li class="footer__item">Rút gọn liên kết</li>
+                            <li class="footer__item">Clip-path maker</li>
+                            <li class="footer__item">Snippet generator</li>
+                            <li class="footer__item">Cảnh báo sờ tay lên mặt</li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="footer__heading">
+                            CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">Mã số thuế: 0109922901</li>
+                            <li class="footer__item">Ngày thành lập: 04/03/2022</li>
+                            <li class="footer__item">Lĩnh vực: Công nghệ, giáo dục, lập trình. F8 xây dựng và phát triển những sản phẩm mang lại giá trị cho cộng đồng.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-12 m-12 c-12 nocopyright">
+                        <span class="nocopyright__text">© 2018 - 2023 F8. Nền tảng học lập trình hàng đầu Việt Nam</span>
+                        <div class="footer__icon">
+                            <span class="nocopyright__icon"><i class="fa-brands fa-square-youtube nocopyright__icon-yt"></i></span>
+                            <span class="nocopyright__icon"><i class="fa-brands fa-square-facebook nocopyright__icon-fb"></i></span>
+                            <span class="nocopyright__icon"><i class="fa-brands fa-tiktok nocopyright__icon-tt"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
